@@ -11,6 +11,7 @@
 		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
 		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
 		0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0102858E5BE009F7BCB /* FirebaseAuth */; };
+		0BD07B38286A5637004F2877 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B37286A5637004F2877 /* RegisterView.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C967728548625006F2A51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* ContentView.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0BD07B37286A5637004F2877 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
 		244C967628548625006F2A51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				244C967628548625006F2A51 /* ContentView.swift */,
+				0BD07B37286A5637004F2877 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BD07B38286A5637004F2877 /* RegisterView.swift in Sources */,
 				244C967728548625006F2A51 /* ContentView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
 			);
