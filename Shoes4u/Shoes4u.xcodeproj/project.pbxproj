@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */; };
+		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
+		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
+		0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0102858E5BE009F7BCB /* FirebaseAuth */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C967728548625006F2A51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* ContentView.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
 		244C967628548625006F2A51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +58,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */,
+				0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */,
 				244C96A128548883006F2A51 /* KeychainSwift in Frameworks */,
+				0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +82,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BA5D00F2858E5BE009F7BCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BD07B2A2869FC9D004F2877 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B302869FCF2004F2877 /* UseCases */,
+				0BD07B2F2869FCEE004F2877 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0BD07B2B2869FCA6004F2877 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B332869FD10004F2877 /* DTOs */,
+				0BD07B312869FCFC004F2877 /* DataSources */,
+				0BD07B342869FD1A004F2877 /* Repositories */,
+				0BD07B352869FD44004F2877 /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0BD07B2C2869FCB4004F2877 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B2D2869FCC0004F2877 /* Views */,
+				0BD07B2E2869FCCB004F2877 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0BD07B2D2869FCC0004F2877 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				244C967628548625006F2A51 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BD07B2E2869FCCB004F2877 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0BD07B2F2869FCEE004F2877 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BD07B302869FCF2004F2877 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0BD07B312869FCFC004F2877 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		0BD07B332869FD10004F2877 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		0BD07B342869FD1A004F2877 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0BD07B352869FD44004F2877 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		244C966828548625006F2A51 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +182,7 @@
 				244C96842854862B006F2A51 /* Shoes4uTests */,
 				244C968E2854862B006F2A51 /* Shoes4uUITests */,
 				244C967228548625006F2A51 /* Products */,
+				0BA5D00F2858E5BE009F7BCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,9 +199,12 @@
 		244C967328548625006F2A51 /* Shoes4u */ = {
 			isa = PBXGroup;
 			children = (
-				244C96A22854894E006F2A51 /* Info.plist */,
 				244C967428548625006F2A51 /* Shoes4uApp.swift */,
-				244C967628548625006F2A51 /* ContentView.swift */,
+				0BD07B2C2869FCB4004F2877 /* Presentation */,
+				0BD07B2B2869FCA6004F2877 /* Data */,
+				0BD07B2A2869FC9D004F2877 /* Domain */,
+				244C96A22854894E006F2A51 /* Info.plist */,
+				0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */,
 				244C96782854862B006F2A51 /* Assets.xcassets */,
 				244C967A2854862B006F2A51 /* Preview Content */,
 			);
@@ -149,6 +254,9 @@
 			name = Shoes4u;
 			packageProductDependencies = (
 				244C96A028548883006F2A51 /* KeychainSwift */,
+				0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */,
+				0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */,
+				0BA5D0102858E5BE009F7BCB /* FirebaseAuth */,
 			);
 			productName = Shoes4u;
 			productReference = 244C967128548625006F2A51 /* Shoes4u.app */;
@@ -224,6 +332,7 @@
 			mainGroup = 244C966828548625006F2A51;
 			packageReferences = (
 				244C969F28548883006F2A51 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 244C967228548625006F2A51 /* Products */;
 			projectDirPath = "";
@@ -243,6 +352,7 @@
 			files = (
 				244C967C2854862B006F2A51 /* Preview Assets.xcassets in Resources */,
 				244C96792854862B006F2A51 /* Assets.xcassets in Resources */,
+				0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +701,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		244C969F28548883006F2A51 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
@@ -602,6 +720,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		0BA5D0102858E5BE009F7BCB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		244C96A028548883006F2A51 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 244C969F28548883006F2A51 /* XCRemoteSwiftPackageReference "keychain-swift" */;
