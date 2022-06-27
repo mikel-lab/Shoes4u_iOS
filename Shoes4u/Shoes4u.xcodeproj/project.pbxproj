@@ -89,6 +89,92 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0BD07B2A2869FC9D004F2877 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B302869FCF2004F2877 /* UseCases */,
+				0BD07B2F2869FCEE004F2877 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0BD07B2B2869FCA6004F2877 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B332869FD10004F2877 /* DTOs */,
+				0BD07B312869FCFC004F2877 /* DataSources */,
+				0BD07B342869FD1A004F2877 /* Repositories */,
+				0BD07B352869FD44004F2877 /* CoreData */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0BD07B2C2869FCB4004F2877 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B2D2869FCC0004F2877 /* Views */,
+				0BD07B2E2869FCCB004F2877 /* ViewModels */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0BD07B2D2869FCC0004F2877 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				244C967628548625006F2A51 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0BD07B2E2869FCCB004F2877 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0BD07B2F2869FCEE004F2877 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0BD07B302869FCF2004F2877 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0BD07B312869FCFC004F2877 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		0BD07B332869FD10004F2877 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		0BD07B342869FD1A004F2877 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0BD07B352869FD44004F2877 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		244C966828548625006F2A51 = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +199,11 @@
 		244C967328548625006F2A51 /* Shoes4u */ = {
 			isa = PBXGroup;
 			children = (
-				244C96A22854894E006F2A51 /* Info.plist */,
 				244C967428548625006F2A51 /* Shoes4uApp.swift */,
-				244C967628548625006F2A51 /* ContentView.swift */,
+				0BD07B2C2869FCB4004F2877 /* Presentation */,
+				0BD07B2B2869FCA6004F2877 /* Data */,
+				0BD07B2A2869FC9D004F2877 /* Domain */,
+				244C96A22854894E006F2A51 /* Info.plist */,
 				0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */,
 				244C96782854862B006F2A51 /* Assets.xcassets */,
 				244C967A2854862B006F2A51 /* Preview Content */,
