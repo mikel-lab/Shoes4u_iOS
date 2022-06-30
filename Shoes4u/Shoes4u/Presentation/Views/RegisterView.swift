@@ -10,10 +10,31 @@ import SwiftUI
 struct RegisterView: View {
     var body: some View {
         VStack {
-            Text("Hello, World!")
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            // Campos de texto
+            VStack {
+                Text("Información personal")
+                TextFieldAndImageView(placeholder: "Nombre", image: "")
+                TextFieldAndImageView(placeholder: "Apellidos", image: "")
+                TextFieldAndImageView(placeholder: "Correo electrónico", image: "")
+                TextFieldAndImageView(placeholder: "Ciudad", image: "")
+                TextFieldAndImageView(placeholder: "Provincia", image: "")
+            }
+            
+            
+            VStack {
+                Text("Información de usuario")
+                TextFieldAndImageView(placeholder: "Nombre de usuario", image: "")
+                TextFieldAndImageView(placeholder: "Contraseña", image: "")
+                TextFieldAndImageView(placeholder: "Confirmar contraseña", image: "")
+            }
+            
+            // Registro
+            ButtonConfirmUserView(textButton: "ENTRAR")
+            // Logo de la app
+            Image("LOGO")
         }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color.teal)
     }
 }
 
