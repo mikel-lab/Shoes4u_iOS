@@ -13,21 +13,25 @@ struct LoginView: View {
         VStack {
             
             // Logo
-            // Image(systemName: "person")
-            
+            Image("Shoes4u")
+                .resizable()
+                .scaledToFit()
+                .padding([.leading, .trailing], 60)
+                .padding(.top, 100)
+            Spacer()
             /* =================== */
             // USUARIO
             TextFieldAndImageView(placeholder: "Usuario", image: "person")
+                .padding(.bottom, 8)
             // CONTRASEÑA
-            TextFieldAndImageView(placeholder: "Contraseña", image: "key")
+            TextFieldAndImageView(placeholder: "Contraseña", image: "lock")
             // LOG-IN
             Button {
                 print("Estoy intentando entrar al sistema")
             } label: {
                 ButtonConfirmUserView(textButton: "ENTRAR")
             }
-            /* =================== */
-            
+            .padding(.top, 16)
             /* =================== */
             
             // Sección de olvidar contraseña
@@ -37,7 +41,9 @@ struct LoginView: View {
             } label: {
                 Text("He olvidado mi contraseña")
             }
+            .padding(.top, 20)
             
+            Spacer()
             
             /* =================== */
             
@@ -50,13 +56,19 @@ struct LoginView: View {
                     ButtonConfirmUserView(textButton: "REGÍSTRATE")
                 }
             }
+            .padding(.bottom, 25)
+            
+            
             
             Image("LOGO")
-            
-            
+                .resizable()
+                .scaledToFit()
+                .frame(width: 60, height: 60)
+                
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.brown)
+        .padding([.leading, .trailing], 25)
+        .background(Color.mainBackground)
         
         
     }

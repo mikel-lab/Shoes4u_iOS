@@ -11,15 +11,35 @@ struct RecoverPasswordView: View {
     var body: some View {
         
         VStack {
-            Image("LOGO")
-            Text("¿OLVIDASTE LA CONTRASEÑA?")
-            Text("Introduce tu e-mail y te enviaremos un enlace para poder cambiar tu contraseña")
-            TextFieldAndImageView(placeholder: "Correo electrónico", image: "person")
+            
+            Image("Shoes4u")
+                .resizable()
+                .scaledToFit()
+                .padding([.leading, .trailing], 60)
+                .padding(.top, 50)
+            
+            Spacer()
+            
+            Text("Restaurar contraseña")
+                .fontWeight(.heavy)
+                .font(.system(size: 24))
+            Spacer()
+            
+            VStack (alignment: .leading){
+                Text("Introduce tu correo electrónico y recibirás un enlace para restaurarla")
+                    .fontWeight(.thin)
+                    .padding(.bottom, 16)
+                TextFieldAndImageView(placeholder: "Correo electrónico", image: "person")
+            }
+            
             ButtonConfirmUserView(textButton: "ENVIAR")
+                .padding(.top, 16)
+            Spacer()
             Image("LOGO")
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.brown)
+        .padding([.leading, .trailing], 25)
+        .background(Color.mainBackground)
     }
 }
 

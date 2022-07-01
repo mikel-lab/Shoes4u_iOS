@@ -14,15 +14,14 @@ struct TextFieldAndImageView: View {
     
     var body: some View {
         HStack {
-            Spacer()
             TextField(placeholder, text: .constant(""))
                 .padding(4)
                 .overlay(RoundedRectangle(cornerRadius: 5)
                     .stroke(Color.black, lineWidth: 2))
             Image(systemName: image)
                 .resizable()
-                .frame(width: 32.0, height: 32.0)
-            Spacer()
+                .scaledToFit()
+                .frame(width: 32, height: 32)
         }
     }
 }

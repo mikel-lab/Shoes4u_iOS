@@ -16,6 +16,9 @@
 		0BD07B3D286D914A004F2877 /* ButtonConfirmUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B3C286D914A004F2877 /* ButtonConfirmUserView.swift */; };
 		0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B3E286DB1CF004F2877 /* SplashView.swift */; };
 		0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */; };
+		0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B42286E3DF7004F2877 /* RootViewModel.swift */; };
+		0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B44286E3E62004F2877 /* StatusModel.swift */; };
+		0BD07B48286EEB49004F2877 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B47286EEB49004F2877 /* Color.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C967728548625006F2A51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* LoginView.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 		0BD07B3C286D914A004F2877 /* ButtonConfirmUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfirmUserView.swift; sourceTree = "<group>"; };
 		0BD07B3E286DB1CF004F2877 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
+		0BD07B42286E3DF7004F2877 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewModel.swift; path = Shoes4u/Presentation/Views/RootViewModel.swift; sourceTree = SOURCE_ROOT; };
+		0BD07B44286E3E62004F2877 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusModel.swift; path = Shoes4u/Presentation/Views/StatusModel.swift; sourceTree = SOURCE_ROOT; };
+		0BD07B47286EEB49004F2877 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
 		244C967628548625006F2A51 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -132,9 +138,9 @@
 			isa = PBXGroup;
 			children = (
 				0BD07B3E286DB1CF004F2877 /* SplashView.swift */,
-				0BD07B37286A5637004F2877 /* RegisterView.swift */,
 				244C967628548625006F2A51 /* LoginView.swift */,
 				0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */,
+				0BD07B37286A5637004F2877 /* RegisterView.swift */,
 				0BD07B39286D859A004F2877 /* SubViews */,
 			);
 			path = Views;
@@ -143,6 +149,7 @@
 		0BD07B2E2869FCCB004F2877 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0BD07B42286E3DF7004F2877 /* RootViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -150,6 +157,7 @@
 		0BD07B2F2869FCEE004F2877 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0BD07B44286E3E62004F2877 /* StatusModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +206,14 @@
 			path = SubViews;
 			sourceTree = "<group>";
 		};
+		0BD07B46286EEB30004F2877 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B47286EEB49004F2877 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		244C966828548625006F2A51 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +242,7 @@
 				0BD07B2C2869FCB4004F2877 /* Presentation */,
 				0BD07B2B2869FCA6004F2877 /* Data */,
 				0BD07B2A2869FC9D004F2877 /* Domain */,
+				0BD07B46286EEB30004F2877 /* Extensions */,
 				244C96A22854894E006F2A51 /* Info.plist */,
 				0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */,
 				244C96782854862B006F2A51 /* Assets.xcassets */,
@@ -403,9 +420,12 @@
 				0BD07B3B286D85BE004F2877 /* TextFieldAndImageView.swift in Sources */,
 				0BD07B38286A5637004F2877 /* RegisterView.swift in Sources */,
 				244C967728548625006F2A51 /* LoginView.swift in Sources */,
+				0BD07B48286EEB49004F2877 /* Color.swift in Sources */,
 				0BD07B3D286D914A004F2877 /* ButtonConfirmUserView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
 				0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */,
+				0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */,
+				0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */,
 				0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

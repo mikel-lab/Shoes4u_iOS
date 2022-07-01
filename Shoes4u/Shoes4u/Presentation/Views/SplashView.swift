@@ -12,12 +12,19 @@ struct SplashView: View {
         VStack {
             Spacer()
             Image("LOGO")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 180, height: 180)
             Spacer()
-            Text("Shoes4u")
-                .fontWeight(.black)
+            Image("Shoes4u")
+                .resizable()
+                .scaledToFit()
+                .padding([.leading, .trailing], 60)
+                .padding(.bottom, 30)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.brown)
+        .padding([.leading, .trailing], 25)
+        .background(Color.mainBackground)
     }
 }
 

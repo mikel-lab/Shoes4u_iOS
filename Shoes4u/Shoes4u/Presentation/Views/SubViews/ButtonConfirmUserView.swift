@@ -13,10 +13,11 @@ struct ButtonConfirmUserView: View {
     
     var body: some View {
         Text(textButton)
+            .fontWeight(.medium)
             .padding([.bottom, .top], 8)
             .padding([.leading, .trailing], 14)
             .foregroundColor(Color.white)
-            .background(Color.green)
+            .background(Color.secondaryBackground)
             .cornerRadius(5)
     }
 }

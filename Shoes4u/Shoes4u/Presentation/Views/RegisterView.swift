@@ -10,31 +10,55 @@ import SwiftUI
 struct RegisterView: View {
     var body: some View {
         VStack {
+            
+            Image("Shoes4u")
+                .resizable()
+                .scaledToFit()
+                .padding([.leading, .trailing], 60)
+                .padding(.top, 20)
+                
+            Spacer()
+
             // Campos de texto
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Información personal")
-                TextFieldAndImageView(placeholder: "Nombre", image: "")
-                TextFieldAndImageView(placeholder: "Apellidos", image: "")
-                TextFieldAndImageView(placeholder: "Correo electrónico", image: "")
-                TextFieldAndImageView(placeholder: "Ciudad", image: "")
-                TextFieldAndImageView(placeholder: "Provincia", image: "")
+                    .fontWeight(.heavy)
+                TextFieldAndImageView(placeholder: "Nombre", image: "signature")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Apellidos", image: "signature")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Correo electrónico", image: "envelope")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Ciudad", image: "building")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Provincia", image: "building.2")
             }
             
+            Spacer()
             
-            VStack {
+            VStack(alignment: .leading) {
                 Text("Información de usuario")
-                TextFieldAndImageView(placeholder: "Nombre de usuario", image: "")
-                TextFieldAndImageView(placeholder: "Contraseña", image: "")
-                TextFieldAndImageView(placeholder: "Confirmar contraseña", image: "")
+                    .fontWeight(.heavy)
+                TextFieldAndImageView(placeholder: "Nombre de usuario", image: "person")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Contraseña", image: "lock")
+                    .padding(.bottom, 8)
+                TextFieldAndImageView(placeholder: "Confirmar contraseña", image: "lock")
             }
             
+            Spacer()
             // Registro
             ButtonConfirmUserView(textButton: "ENTRAR")
             // Logo de la app
+            Spacer()
             Image("LOGO")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 60, height: 60)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.teal)
+        .padding([.leading, .trailing], 25)
+        .background(Color.mainBackground)
     }
 }
 
