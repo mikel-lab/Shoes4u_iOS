@@ -11,9 +11,11 @@
 		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
 		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
 		0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0102858E5BE009F7BCB /* FirebaseAuth */; };
-		2432EE55286BACC300FB1945 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432EE54286BACC300FB1945 /* SplashView.swift */; };
+		24238AC8287226460026C52A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238AC7287226460026C52A /* Product.swift */; };
+		24238ACA287229740026C52A /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238AC9287229740026C52A /* ProductsView.swift */; };
+		24238ACC287229B30026C52A /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACB287229B30026C52A /* ProductsViewModel.swift */; };
+		24238AD02872D21F0026C52A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACF2872D21F0026C52A /* TabBarView.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
-		244C967728548625006F2A51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* ContentView.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
 		244C967C2854862B006F2A51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C967B2854862B006F2A51 /* Preview Assets.xcassets */; };
 		244C96862854862B006F2A51 /* Shoes4uTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C96852854862B006F2A51 /* Shoes4uTests.swift */; };
@@ -41,10 +43,12 @@
 
 /* Begin PBXFileReference section */
 		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2432EE54286BACC300FB1945 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		24238AC7287226460026C52A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		24238AC9287229740026C52A /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		24238ACB287229B30026C52A /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		24238ACF2872D21F0026C52A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
-		244C967628548625006F2A51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		244C96782854862B006F2A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		244C967B2854862B006F2A51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		244C96812854862B006F2A51 /* Shoes4uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Shoes4uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +101,7 @@
 				0BD07B302869FCF2004F2877 /* UseCases */,
 				0BD07B2F2869FCEE004F2877 /* Models */,
 			);
-			path = Domain;
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		0BD07B2B2869FCA6004F2877 /* Data */ = {
@@ -108,7 +112,7 @@
 				0BD07B342869FD1A004F2877 /* Repositories */,
 				0BD07B352869FD44004F2877 /* CoreData */,
 			);
-			path = Data;
+			name = Data;
 			sourceTree = "<group>";
 		};
 		0BD07B2C2869FCB4004F2877 /* Presentation */ = {
@@ -123,8 +127,8 @@
 		0BD07B2D2869FCC0004F2877 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				244C967628548625006F2A51 /* ContentView.swift */,
-				2432EE54286BACC300FB1945 /* SplashView.swift */,
+				24238ACE2872D1FE0026C52A /* TabBar */,
+				24238ACD2872D1E00026C52A /* ProductsList */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,50 +136,69 @@
 		0BD07B2E2869FCCB004F2877 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				24238ACB287229B30026C52A /* ProductsViewModel.swift */,
 			);
-			path = ViewModels;
+			name = ViewModels;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		0BD07B2F2869FCEE004F2877 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				24238AC7287226460026C52A /* Product.swift */,
 			);
-			path = Models;
+			name = Models;
 			sourceTree = "<group>";
 		};
 		0BD07B302869FCF2004F2877 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = UseCases;
+			name = UseCases;
 			sourceTree = "<group>";
 		};
 		0BD07B312869FCFC004F2877 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DataSources;
+			name = DataSources;
 			sourceTree = "<group>";
 		};
 		0BD07B332869FD10004F2877 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = DTOs;
+			name = DTOs;
 			sourceTree = "<group>";
 		};
 		0BD07B342869FD1A004F2877 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Repositories;
+			name = Repositories;
 			sourceTree = "<group>";
 		};
 		0BD07B352869FD44004F2877 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CoreData;
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		24238ACD2872D1E00026C52A /* ProductsList */ = {
+			isa = PBXGroup;
+			children = (
+				24238AC9287229740026C52A /* ProductsView.swift */,
+			);
+			path = ProductsList;
+			sourceTree = "<group>";
+		};
+		24238ACE2872D1FE0026C52A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				24238ACF2872D21F0026C52A /* TabBarView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 		244C966828548625006F2A51 = {
@@ -380,9 +403,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				244C967728548625006F2A51 /* ContentView.swift in Sources */,
+				24238ACA287229740026C52A /* ProductsView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
-				2432EE55286BACC300FB1945 /* SplashView.swift in Sources */,
+				24238ACC287229B30026C52A /* ProductsViewModel.swift in Sources */,
+				24238AD02872D21F0026C52A /* TabBarView.swift in Sources */,
+				24238AC8287226460026C52A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
