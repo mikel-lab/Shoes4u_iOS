@@ -9,8 +9,9 @@ import Foundation
 
 enum Status {
     case none
-    case loading
-    case loaded
+    case login
     case register
+    case recoverPassword
+    case products
     case error(error: String)
 }

@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct SplashView: View {
+    
+    // Variables
+    @EnvironmentObject var rootViewModel: RootViewModel
+    
+    // Vista
     var body: some View {
         VStack {
             Spacer()
@@ -25,6 +30,13 @@ struct SplashView: View {
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .padding([.leading, .trailing], 25)
         .background(Color.mainBackground)
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                withAnimation {
+                    rootViewModel.status = Status.login
+                }
+            }
+        }
     }
 }
 

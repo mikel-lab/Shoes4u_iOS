@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B784CCA2875B2D700E00B6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B784CC92875B2D700E00B6B /* FirebaseFirestore */; };
 		0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */; };
 		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
 		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
 		0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0102858E5BE009F7BCB /* FirebaseAuth */; };
 		0BD07B38286A5637004F2877 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B37286A5637004F2877 /* RegisterView.swift */; };
-		0BD07B3B286D85BE004F2877 /* TextFieldAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B3A286D85BE004F2877 /* TextFieldAndImageView.swift */; };
-		0BD07B3D286D914A004F2877 /* ButtonConfirmUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B3C286D914A004F2877 /* ButtonConfirmUserView.swift */; };
 		0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B3E286DB1CF004F2877 /* SplashView.swift */; };
 		0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */; };
 		0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B42286E3DF7004F2877 /* RootViewModel.swift */; };
 		0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B44286E3E62004F2877 /* StatusModel.swift */; };
 		0BD07B48286EEB49004F2877 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B47286EEB49004F2877 /* Color.swift */; };
+		0BD07B4A286F3AC3004F2877 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B49286F3AC3004F2877 /* ProductsView.swift */; };
+		0BD07B4D286F3B06004F2877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B4C286F3B06004F2877 /* User.swift */; };
+		0BD07B8B2874A0D9004F2877 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B8A2874A0D9004F2877 /* RootView.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C967728548625006F2A51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* LoginView.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
@@ -49,13 +51,14 @@
 /* Begin PBXFileReference section */
 		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BD07B37286A5637004F2877 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		0BD07B3A286D85BE004F2877 /* TextFieldAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldAndImageView.swift; sourceTree = "<group>"; };
-		0BD07B3C286D914A004F2877 /* ButtonConfirmUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonConfirmUserView.swift; sourceTree = "<group>"; };
 		0BD07B3E286DB1CF004F2877 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
 		0BD07B42286E3DF7004F2877 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewModel.swift; path = Shoes4u/Presentation/Views/RootViewModel.swift; sourceTree = SOURCE_ROOT; };
 		0BD07B44286E3E62004F2877 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusModel.swift; path = Shoes4u/Presentation/Views/StatusModel.swift; sourceTree = SOURCE_ROOT; };
 		0BD07B47286EEB49004F2877 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		0BD07B49286F3AC3004F2877 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		0BD07B4C286F3B06004F2877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/Objects/User.swift; sourceTree = SOURCE_ROOT; };
+		0BD07B8A2874A0D9004F2877 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
 		244C967628548625006F2A51 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -77,6 +80,7 @@
 				0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */,
 				0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */,
 				244C96A128548883006F2A51 /* KeychainSwift in Frameworks */,
+				0B784CCA2875B2D700E00B6B /* FirebaseFirestore in Frameworks */,
 				0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,7 +145,8 @@
 				244C967628548625006F2A51 /* LoginView.swift */,
 				0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */,
 				0BD07B37286A5637004F2877 /* RegisterView.swift */,
-				0BD07B39286D859A004F2877 /* SubViews */,
+				0BD07B49286F3AC3004F2877 /* ProductsView.swift */,
+				0BD07B8A2874A0D9004F2877 /* RootView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 		0BD07B2F2869FCEE004F2877 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0BD07B4B286F3AFA004F2877 /* Objects */,
 				0BD07B44286E3E62004F2877 /* StatusModel.swift */,
 			);
 			path = Models;
@@ -197,21 +203,20 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
-		0BD07B39286D859A004F2877 /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B3A286D85BE004F2877 /* TextFieldAndImageView.swift */,
-				0BD07B3C286D914A004F2877 /* ButtonConfirmUserView.swift */,
-			);
-			path = SubViews;
-			sourceTree = "<group>";
-		};
 		0BD07B46286EEB30004F2877 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0BD07B47286EEB49004F2877 /* Color.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0BD07B4B286F3AFA004F2877 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B4C286F3B06004F2877 /* User.swift */,
+			);
+			path = Objects;
 			sourceTree = "<group>";
 		};
 		244C966828548625006F2A51 = {
@@ -297,6 +302,7 @@
 				0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */,
 				0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */,
 				0BA5D0102858E5BE009F7BCB /* FirebaseAuth */,
+				0B784CC92875B2D700E00B6B /* FirebaseFirestore */,
 			);
 			productName = Shoes4u;
 			productReference = 244C967128548625006F2A51 /* Shoes4u.app */;
@@ -417,16 +423,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD07B3B286D85BE004F2877 /* TextFieldAndImageView.swift in Sources */,
 				0BD07B38286A5637004F2877 /* RegisterView.swift in Sources */,
 				244C967728548625006F2A51 /* LoginView.swift in Sources */,
 				0BD07B48286EEB49004F2877 /* Color.swift in Sources */,
-				0BD07B3D286D914A004F2877 /* ButtonConfirmUserView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
+				0BD07B4A286F3AC3004F2877 /* ProductsView.swift in Sources */,
 				0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */,
+				0BD07B4D286F3B06004F2877 /* User.swift in Sources */,
 				0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */,
 				0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */,
 				0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */,
+				0BD07B8B2874A0D9004F2877 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -768,6 +775,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		0B784CC92875B2D700E00B6B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
