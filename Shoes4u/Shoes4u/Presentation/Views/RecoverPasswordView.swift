@@ -12,6 +12,7 @@ struct RecoverPasswordView: View {
     // Variables
     @EnvironmentObject var rootViewModel: RootViewModel
     @State private var email = ""
+    @State private var showingAlert = false
     
     // Vista
     var body: some View {
@@ -43,7 +44,11 @@ struct RecoverPasswordView: View {
                     }
                 }
                 Button {
-                    rootViewModel.recoverPassword(email: email)
+                    if (email == "" || !email.contains("@")) {
+                        showingAlert = true
+                    } else {
+                        rootViewModel.recoverPassword(email: email)
+                    }
                 } label: {
                     Text("Restaurar")
                         .fontWeight(.medium)
@@ -54,6 +59,13 @@ struct RecoverPasswordView: View {
                         .cornerRadius(5)
                 }
                 .padding(.top, 16)
+                .alert(isPresented: $showingAlert) {
+                    Alert(
+                        title: Text("¡Cuidado!"),
+                        message: Text("Antes de nada, has de completar el campo correctamente"),
+                        dismissButton: .default(Text("Ok!"))
+                    )
+                }
                 Spacer()
                 Image("LOGO")
             }

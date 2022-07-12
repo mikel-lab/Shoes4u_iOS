@@ -19,6 +19,7 @@ struct RegisterView: View {
     @State private var userName: String = ""
     @State private var password: String = ""
     @State private var confirmedPassword: String = ""
+    @State private var showingAlert = false
     
     // Vista
     var body: some View {
@@ -167,17 +168,21 @@ struct RegisterView: View {
                 /* BOTÓN DE CONFIRMAR REGISTRO */
                 /* =========================== */
                 Button {
-                    // Que ninguno de los campos esté vacío
-                    // Y que los campos de contraseña y confirmar contraseña sean iguales
-                    rootViewModel.registerUserAuthentication(email: mail,
-                                                             password: confirmedPassword)
-                    rootViewModel.registerUserFullDataFireStore(name: name,
-                                                                surnames: surnames,
-                                                                email: mail,
-                                                                province: province,
-                                                                city: city,
-                                                                username: userName,
-                                                                password: password)
+                    if ((name == "" || surnames == "" || mail == "" || city == "" || province == "" || userName == "" || password == "" || confirmedPassword == "") ||
+                        (password != confirmedPassword) ||
+                        (!mail.contains("@"))) {
+                        showingAlert = true
+                    } else {
+                        rootViewModel.registerUserAuthentication(email: mail,
+                                                                 password: confirmedPassword)
+                        rootViewModel.registerUserFullDataFireStore(name: name,
+                                                                    surnames: surnames,
+                                                                    email: mail,
+                                                                    province: province,
+                                                                    city: city,
+                                                                    username: userName,
+                                                                    password: password)
+                    }
                 } label: {
                     Text("REGÍSTRAME")
                         .fontWeight(.medium)
@@ -187,7 +192,13 @@ struct RegisterView: View {
                         .background(Color.secondaryBackground)
                         .cornerRadius(5)
                 }
-                
+                .alert(isPresented: $showingAlert) {
+                    Alert(
+                        title: Text("¡Cuidado!"),
+                        message: Text("Antes de nada, has de completar TODOS los campos correctamente"),
+                        dismissButton: .default(Text("Ok!"))
+                    )
+                }
                 Spacer()
                 /* ===================== */
                 /* LOGO DE LA APLICACIÓN */

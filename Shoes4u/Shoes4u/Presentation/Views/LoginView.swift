@@ -13,8 +13,7 @@ struct LoginView: View {
     @EnvironmentObject var rootViewModel: RootViewModel
     @State private var email: String = ""
     @State private var password: String = ""
-    private var isCorrectEmail: Bool = false
-    private var isCorrectPassword: Bool = false
+    @State private var showingAlert = false
     
     // Vista
     var body: some View {
@@ -62,7 +61,11 @@ struct LoginView: View {
                 /* BOTÓN DE LOG-IN */
                 /* =============== */
                 Button {
-                    rootViewModel.login(email: email, password: password)
+                    if (email == "" || password == "" || !email.contains("@")) {
+                        showingAlert = true
+                    } else {
+                        rootViewModel.login(email: email, password: password)
+                    }
                 } label: {
                     Text("ENTRAR")
                         .fontWeight(.medium)
@@ -73,6 +76,13 @@ struct LoginView: View {
                         .cornerRadius(5)
                 }
                 .padding(.top, 16)
+                .alert(isPresented: $showingAlert) {
+                    Alert(
+                        title: Text("¡Cuidado!"),
+                        message: Text("Antes de nada, has de completar los campos correctamente"),
+                        dismissButton: .default(Text("Ok!"))
+                    )
+                }
                 /* ============================ */
                 /* BOTÓN DE CONTRASEÑA OLVIDADA */
                 /* ============================ */
@@ -116,13 +126,6 @@ struct LoginView: View {
             .navigationBarHidden(false)
         }
         .accentColor(.secondaryBackground)
-    }
-    
-    
-    private func textFieldIsEmpty (content: String) {
-        if content.isEmpty {
-            // El contenido está vacío
-        }
     }
     
 }
