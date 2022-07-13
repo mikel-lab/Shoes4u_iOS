@@ -4,29 +4,25 @@
 //
 //  Created by Mikel Cobian on 3/7/22.
 //
-
 import SwiftUI
 
 struct ProductsView: View {
     //var products: Product
     //@StateObject private var viewmodel = ProductsViewModel()
     @State private var searchText = ""
+    func botonazo(){
+        print("balsdld")
+    }
+    
     private let gridItems: [GridItem] = [
-       
+        
         .init(.flexible(minimum: 100, maximum: 300), spacing: 10),
         .init(.flexible(minimum: 100, maximum: 300), spacing: 10),
         
     ]
     var body: some View {
-     
+        
         ZStack {
-            
-            Color(.green)
-                .ignoresSafeArea()
-            /*
-             Color(.systemGroupedBackground)
-                 .edgesIgnoringSafeArea(.all)
-             */
             
             VStack(spacing: 20) {
                 
@@ -35,21 +31,33 @@ struct ProductsView: View {
                     Image("Shoes4u")
                         .resizable()
                         .frame(width: 80, height: 16, alignment: .center )
-                    Text("Buscar \(searchText)")
-                        .searchable(text: $searchText, prompt: "Encuentra tus zapatillas")
-                        .navigationTitle("Searchable Example")
+                    HStack {
+                        Button(action: {
+                            botonazo()
+                        }) {
+                            Image(systemName: "arrow.backward")
+                        }
+                        
+                        
+                        TextField("Search ...", text: $searchText)
+                            .padding(7)
+                            .padding(.horizontal, 25)
+                            .background(Color(.systemGray6))
+                            .cornerRadius(8)
+                        Image(systemName: "bag")
+                    }
                     Image("runner")
                         .resizable()
                         .frame(width: 358, height: 370, alignment: .center )
                         .cornerRadius(10.0)
                     
-
+                    
                     
                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 
                 ScrollView(.vertical, showsIndicators: false) {
-                   
+                    
                     LazyVGrid(columns: gridItems, spacing: 10) {
                         
                         Image("zapatilla_modelo")
@@ -93,19 +101,20 @@ struct ProductsView: View {
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10.0)
-                      
-                            
-                        }
+                        
                         
                     }
                     
                 }
-
+                
             }
-            .padding(.horizontal)
             
         }
+        .padding(.horizontal)
+        .background(Color.EqButtonAction)
+        
     }
+}
 
 
 struct ProductsView_Previews: PreviewProvider {
