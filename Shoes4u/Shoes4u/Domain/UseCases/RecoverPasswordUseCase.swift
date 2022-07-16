@@ -6,12 +6,12 @@
 //
 
 import Foundation
-
+  
 
 protocol RecoverPasswordUseCaseProtocol {
     func execute (email: String)
 }
-
+    
 
 struct RecoverPasswordUseCase: RecoverPasswordUseCaseProtocol {
     
