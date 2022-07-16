@@ -12,6 +12,7 @@
 		0B91077A2882BFDF00CE2B61 /* RecoverPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */; };
 		0B91077C2882BFEE00CE2B61 /* RegisterUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */; };
 		0B91077E2882C1E100CE2B61 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91077D2882C1E100CE2B61 /* UsersRepository.swift */; };
+		0B9107882882DEA100CE2B61 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9107872882DEA100CE2B61 /* User.swift */; };
 		0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */; };
 		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
 		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
@@ -23,7 +24,6 @@
 		0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B44286E3E62004F2877 /* StatusModel.swift */; };
 		0BD07B48286EEB49004F2877 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B47286EEB49004F2877 /* Color.swift */; };
 		0BD07B4A286F3AC3004F2877 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B49286F3AC3004F2877 /* ProductsView.swift */; };
-		0BD07B4D286F3B06004F2877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B4C286F3B06004F2877 /* User.swift */; };
 		0BD07B8B2874A0D9004F2877 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD07B8A2874A0D9004F2877 /* RootView.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C967728548625006F2A51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967628548625006F2A51 /* LoginView.swift */; };
@@ -53,19 +53,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B9107772882BF1700CE2B61 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUseCase.swift; path = Shoes4u/Presentation/Views/LoginUseCase.swift; sourceTree = SOURCE_ROOT; };
-		0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecoverPasswordUseCase.swift; path = Shoes4u/Presentation/Views/RecoverPasswordUseCase.swift; sourceTree = SOURCE_ROOT; };
-		0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterUserUseCase.swift; path = Shoes4u/Presentation/Views/RegisterUserUseCase.swift; sourceTree = SOURCE_ROOT; };
-		0B91077D2882C1E100CE2B61 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersRepository.swift; path = Shoes4u/Presentation/Views/UsersRepository.swift; sourceTree = SOURCE_ROOT; };
+		0B9107772882BF1700CE2B61 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUseCase.swift; path = Shoes4u/Domain/UseCases/LoginUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecoverPasswordUseCase.swift; path = Shoes4u/Domain/UseCases/RecoverPasswordUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterUserUseCase.swift; path = Shoes4u/Domain/UseCases/RegisterUserUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B91077D2882C1E100CE2B61 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersRepository.swift; path = Shoes4u/Data/Repository/UsersRepository.swift; sourceTree = SOURCE_ROOT; };
+		0B9107872882DEA100CE2B61 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BD07B37286A5637004F2877 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		0BD07B3E286DB1CF004F2877 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		0BD07B40286DB96C004F2877 /* RecoverPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordView.swift; sourceTree = "<group>"; };
-		0BD07B42286E3DF7004F2877 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewModel.swift; path = Shoes4u/Presentation/Views/RootViewModel.swift; sourceTree = SOURCE_ROOT; };
-		0BD07B44286E3E62004F2877 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusModel.swift; path = Shoes4u/Presentation/Views/StatusModel.swift; sourceTree = SOURCE_ROOT; };
+		0BD07B42286E3DF7004F2877 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RootViewModel.swift; path = Shoes4u/Presentation/ViewModel/RootViewModel.swift; sourceTree = SOURCE_ROOT; };
+		0BD07B44286E3E62004F2877 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatusModel.swift; path = Shoes4u/Domain/Model/StatusModel.swift; sourceTree = SOURCE_ROOT; };
 		0BD07B47286EEB49004F2877 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		0BD07B49286F3AC3004F2877 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
-		0BD07B4C286F3B06004F2877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/Objects/User.swift; sourceTree = SOURCE_ROOT; };
 		0BD07B8A2874A0D9004F2877 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
@@ -110,6 +110,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B91077F2882DDAB00CE2B61 /* Auxiliar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auxiliar;
+			sourceTree = "<group>";
+		};
+		0B9107802882DDF200CE2B61 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0BD07B42286E3DF7004F2877 /* RootViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0B9107812882DE1400CE2B61 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B9107822882DE1A00CE2B61 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0B9107822882DE1A00CE2B61 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				0B91077D2882C1E100CE2B61 /* UsersRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		0B9107832882DE2B00CE2B61 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0B9107852882DE7900CE2B61 /* Model */,
+				0B9107842882DE4200CE2B61 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0B9107842882DE4200CE2B61 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0B9107772882BF1700CE2B61 /* LoginUseCase.swift */,
+				0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */,
+				0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0B9107852882DE7900CE2B61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B9107862882DE8400CE2B61 /* Objects */,
+				0BD07B44286E3E62004F2877 /* StatusModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B9107862882DE8400CE2B61 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				0B9107872882DEA100CE2B61 /* User.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		0BA5D00F2858E5BE009F7BCB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,31 +184,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0BD07B2A2869FC9D004F2877 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B302869FCF2004F2877 /* UseCases */,
-				0BD07B2F2869FCEE004F2877 /* Models */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
-		0BD07B2B2869FCA6004F2877 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B332869FD10004F2877 /* DTOs */,
-				0BD07B312869FCFC004F2877 /* DataSources */,
-				0BD07B342869FD1A004F2877 /* Repositories */,
-				0BD07B352869FD44004F2877 /* CoreData */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		0BD07B2C2869FCB4004F2877 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
 				0BD07B2D2869FCC0004F2877 /* Views */,
-				0BD07B2E2869FCCB004F2877 /* ViewModels */,
+				0B9107802882DDF200CE2B61 /* ViewModel */,
+				0B91077F2882DDAB00CE2B61 /* Auxiliar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -159,76 +207,12 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		0BD07B2E2869FCCB004F2877 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B42286E3DF7004F2877 /* RootViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		0BD07B2F2869FCEE004F2877 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B4B286F3AFA004F2877 /* Objects */,
-				0BD07B44286E3E62004F2877 /* StatusModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0BD07B302869FCF2004F2877 /* UseCases */ = {
-			isa = PBXGroup;
-			children = (
-				0B9107772882BF1700CE2B61 /* LoginUseCase.swift */,
-				0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */,
-				0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */,
-			);
-			path = UseCases;
-			sourceTree = "<group>";
-		};
-		0BD07B312869FCFC004F2877 /* DataSources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataSources;
-			sourceTree = "<group>";
-		};
-		0BD07B332869FD10004F2877 /* DTOs */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DTOs;
-			sourceTree = "<group>";
-		};
-		0BD07B342869FD1A004F2877 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				0B91077D2882C1E100CE2B61 /* UsersRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
-		0BD07B352869FD44004F2877 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		0BD07B46286EEB30004F2877 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				0BD07B47286EEB49004F2877 /* Color.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		0BD07B4B286F3AFA004F2877 /* Objects */ = {
-			isa = PBXGroup;
-			children = (
-				0BD07B4C286F3B06004F2877 /* User.swift */,
-			);
-			path = Objects;
 			sourceTree = "<group>";
 		};
 		244C966828548625006F2A51 = {
@@ -255,10 +239,10 @@
 		244C967328548625006F2A51 /* Shoes4u */ = {
 			isa = PBXGroup;
 			children = (
+				0B9107832882DE2B00CE2B61 /* Domain */,
+				0B9107812882DE1400CE2B61 /* Data */,
 				244C967428548625006F2A51 /* Shoes4uApp.swift */,
 				0BD07B2C2869FCB4004F2877 /* Presentation */,
-				0BD07B2A2869FC9D004F2877 /* Domain */,
-				0BD07B2B2869FCA6004F2877 /* Data */,
 				0BD07B46286EEB30004F2877 /* Extensions */,
 				244C96A22854894E006F2A51 /* Info.plist */,
 				0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */,
@@ -439,10 +423,10 @@
 				244C967728548625006F2A51 /* LoginView.swift in Sources */,
 				0BD07B48286EEB49004F2877 /* Color.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
+				0B9107882882DEA100CE2B61 /* User.swift in Sources */,
 				0BD07B4A286F3AC3004F2877 /* ProductsView.swift in Sources */,
 				0B91077A2882BFDF00CE2B61 /* RecoverPasswordUseCase.swift in Sources */,
 				0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */,
-				0BD07B4D286F3B06004F2877 /* User.swift in Sources */,
 				0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */,
 				0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */,
 				0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */,
