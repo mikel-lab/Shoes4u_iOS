@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0B784CCA2875B2D700E00B6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B784CC92875B2D700E00B6B /* FirebaseFirestore */; };
+		0B9107782882BF1700CE2B61 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9107772882BF1700CE2B61 /* LoginUseCase.swift */; };
+		0B91077A2882BFDF00CE2B61 /* RecoverPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */; };
+		0B91077C2882BFEE00CE2B61 /* RegisterUserUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */; };
+		0B91077E2882C1E100CE2B61 /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B91077D2882C1E100CE2B61 /* UsersRepository.swift */; };
 		0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */; };
 		0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */; };
 		0BA5D00E2858E017009F7BCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */; };
@@ -49,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B9107772882BF1700CE2B61 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUseCase.swift; path = Shoes4u/Presentation/Views/LoginUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecoverPasswordUseCase.swift; path = Shoes4u/Presentation/Views/RecoverPasswordUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterUserUseCase.swift; path = Shoes4u/Presentation/Views/RegisterUserUseCase.swift; sourceTree = SOURCE_ROOT; };
+		0B91077D2882C1E100CE2B61 /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UsersRepository.swift; path = Shoes4u/Presentation/Views/UsersRepository.swift; sourceTree = SOURCE_ROOT; };
 		0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BD07B37286A5637004F2877 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		0BD07B3E286DB1CF004F2877 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -171,6 +179,9 @@
 		0BD07B302869FCF2004F2877 /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				0B9107772882BF1700CE2B61 /* LoginUseCase.swift */,
+				0B9107792882BFDF00CE2B61 /* RecoverPasswordUseCase.swift */,
+				0B91077B2882BFEE00CE2B61 /* RegisterUserUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -192,6 +203,7 @@
 		0BD07B342869FD1A004F2877 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				0B91077D2882C1E100CE2B61 /* UsersRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -245,8 +257,8 @@
 			children = (
 				244C967428548625006F2A51 /* Shoes4uApp.swift */,
 				0BD07B2C2869FCB4004F2877 /* Presentation */,
-				0BD07B2B2869FCA6004F2877 /* Data */,
 				0BD07B2A2869FC9D004F2877 /* Domain */,
+				0BD07B2B2869FCA6004F2877 /* Data */,
 				0BD07B46286EEB30004F2877 /* Extensions */,
 				244C96A22854894E006F2A51 /* Info.plist */,
 				0BA5D00D2858E017009F7BCB /* GoogleService-Info.plist */,
@@ -428,12 +440,16 @@
 				0BD07B48286EEB49004F2877 /* Color.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
 				0BD07B4A286F3AC3004F2877 /* ProductsView.swift in Sources */,
+				0B91077A2882BFDF00CE2B61 /* RecoverPasswordUseCase.swift in Sources */,
 				0BD07B3F286DB1CF004F2877 /* SplashView.swift in Sources */,
 				0BD07B4D286F3B06004F2877 /* User.swift in Sources */,
 				0BD07B45286E3E62004F2877 /* StatusModel.swift in Sources */,
 				0BD07B43286E3DF7004F2877 /* RootViewModel.swift in Sources */,
 				0BD07B41286DB96C004F2877 /* RecoverPasswordView.swift in Sources */,
 				0BD07B8B2874A0D9004F2877 /* RootView.swift in Sources */,
+				0B9107782882BF1700CE2B61 /* LoginUseCase.swift in Sources */,
+				0B91077E2882C1E100CE2B61 /* UsersRepository.swift in Sources */,
+				0B91077C2882BFEE00CE2B61 /* RegisterUserUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
