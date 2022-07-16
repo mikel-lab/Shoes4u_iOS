@@ -110,13 +110,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B91077F2882DDAB00CE2B61 /* Auxiliar */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auxiliar;
-			sourceTree = "<group>";
-		};
 		0B9107802882DDF200CE2B61 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +182,6 @@
 			children = (
 				0BD07B2D2869FCC0004F2877 /* Views */,
 				0B9107802882DDF200CE2B61 /* ViewModel */,
-				0B91077F2882DDAB00CE2B61 /* Auxiliar */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
