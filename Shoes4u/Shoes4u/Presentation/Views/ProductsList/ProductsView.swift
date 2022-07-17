@@ -7,8 +7,8 @@
 import SwiftUI
 
 struct ProductsView: View {
-    var products: [Product]
-    @StateObject private var viewmodel = ProductsViewModel()
+    
+    @StateObject var viewmodel = ProductsViewModel()
     @State private var searchText = ""
     func botonazo(){
         print("Navego hacia atrás")
@@ -60,7 +60,14 @@ struct ProductsView: View {
                     
                     LazyVGrid(columns: gridItems, spacing: 10) {
                         
-                        Image("zapatilla_modelo")
+                        if let zapatilla = viewModel.products {
+                            ForEach(zapatilla){data in
+                                ProductView()
+
+                            }
+                        }
+                        
+                       /* Image("zapatilla_modelo")
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10.0)
@@ -101,7 +108,7 @@ struct ProductsView: View {
                             .resizable()
                             .scaledToFill()
                             .cornerRadius(10.0)
-                        
+                        */
                         
                     }
                     
@@ -117,7 +124,7 @@ struct ProductsView: View {
 }
 
 
-struct ProductsView_Previews: PreviewProvider {
+/* struct ProductsView_Previews: PreviewProvider {
     static var previews: some View {
         ProductsView(products: [Product(
             id: UUID(),
@@ -129,4 +136,4 @@ struct ProductsView_Previews: PreviewProvider {
             price:
             40)])
     }
-}
+} */

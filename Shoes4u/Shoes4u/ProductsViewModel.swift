@@ -17,7 +17,7 @@ import FirebaseFirestore
     @Published var products : [Product?]
     
      init(){
-         
+         getProducts()
      }
     //var productosDevueltos = Set<AnyCancellable>()
     
@@ -29,6 +29,7 @@ import FirebaseFirestore
             } else {
                 for document in querySnapshot!.documents {
                     print("\(document.documentID) => \(document.data())")
+                    products.append(document)
                     
                 }
             }

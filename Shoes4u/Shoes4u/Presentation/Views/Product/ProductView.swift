@@ -43,7 +43,7 @@ struct ProductView: View {
     }
 }
 
-struct ProductView_Previews: PreviewProvider {
+/*struct ProductView_Previews: PreviewProvider {
     static var previews: some View {
         ProductView(zapatilla: Product(
             id: UUID(),
@@ -55,4 +55,4 @@ struct ProductView_Previews: PreviewProvider {
             price:
             40))
     }
-}
+} */
