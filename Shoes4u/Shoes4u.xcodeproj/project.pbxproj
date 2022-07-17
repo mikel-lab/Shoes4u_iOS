@@ -16,6 +16,8 @@
 		24238ACC287229B30026C52A /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACB287229B30026C52A /* ProductsViewModel.swift */; };
 		24238AD02872D21F0026C52A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACF2872D21F0026C52A /* TabBarView.swift */; };
 		24238C40287B3DD30026C52A /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238C3F287B3DD30026C52A /* BaseNetwork.swift */; };
+		24271781288444C200504F95 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 24271780288444C200504F95 /* FirebaseFirestore */; };
+		24271784288470A700504F95 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24271783288470A700504F95 /* ProductView.swift */; };
 		2436F20D2884373800ACE4AC /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436F20C2884373800ACE4AC /* PhotoViewModel.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
@@ -50,6 +52,7 @@
 		24238ACB287229B30026C52A /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		24238ACF2872D21F0026C52A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		24238C3F287B3DD30026C52A /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		24271783288470A700504F95 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
 		2436F20C2884373800ACE4AC /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
@@ -71,6 +74,7 @@
 				0BA5D00C2858DD70009F7BCB /* FirebaseAnalyticsSwift in Frameworks */,
 				0BA5D00A2858DD70009F7BCB /* FirebaseAnalytics in Frameworks */,
 				244C96A128548883006F2A51 /* KeychainSwift in Frameworks */,
+				24271781288444C200504F95 /* FirebaseFirestore in Frameworks */,
 				0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +136,7 @@
 		0BD07B2D2869FCC0004F2877 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				242717822884707F00504F95 /* Product */,
 				24238ACE2872D1FE0026C52A /* TabBar */,
 				24238ACD2872D1E00026C52A /* ProductsList */,
 			);
@@ -213,6 +218,14 @@
 				24238C3F287B3DD30026C52A /* BaseNetwork.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		242717822884707F00504F95 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				24271783288470A700504F95 /* ProductView.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 		244C966828548625006F2A51 = {
@@ -297,6 +310,7 @@
 				0BA5D0092858DD70009F7BCB /* FirebaseAnalytics */,
 				0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */,
 				0BA5D0102858E5BE009F7BCB /* FirebaseAuth */,
+				24271780288444C200504F95 /* FirebaseFirestore */,
 			);
 			productName = Shoes4u;
 			productReference = 244C967128548625006F2A51 /* Shoes4u.app */;
@@ -417,6 +431,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24271784288470A700504F95 /* ProductView.swift in Sources */,
 				24238ACA287229740026C52A /* ProductsView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
 				2436F20D2884373800ACE4AC /* PhotoViewModel.swift in Sources */,
@@ -781,6 +796,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		24271780288444C200504F95 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
 		};
 		244C96A028548883006F2A51 /* KeychainSwift */ = {
 			isa = XCSwiftPackageProductDependency;

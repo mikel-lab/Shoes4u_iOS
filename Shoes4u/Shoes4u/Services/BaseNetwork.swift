@@ -4,39 +4,30 @@
 //
 //  Created by Mikel Cobian on 10/7/22.
 //
-
 import Foundation
+import SwiftUI
+import Combine
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
 
-let server = "https://gateway.marvel.com"
-let privateKey = "ecf701eefbd402a623ed575b76a10c8d1b2b2d10"
-let publicKey = "0e9907e2f4eca5a6bd9e2c673d30447d"
-let ts = "1"
-let apikey = publicKey
-let hash = "e840a33b1efa5d31e5b60c38a8854cf7"
+private let db = Firestore.firestore()
 
-struct HTTPMethods{
-    static let post = "POST"
-    static let get = "GET"
-    static let put = "PUT"
-    static let delete = "DELETE"
-    static let content = "application/json"
-}
 
-//endpoints
-enum endpoints : String{
-    case heroList = ""
-  
-}
 
 struct BaseNetwork {
     
-    func getSessionProducts() -> URLRequest{
-        let urlCad :  String = "\(server)\(endpoints.heroList.rawValue)?apikey=\(apikey)&ts=\(ts)&hash=\(hash)"
-        //Creamos la Request
-        var request =  URLRequest(url: URL(string: urlCad)!)
-        request.httpMethod = HTTPMethods.get
-        request.addValue(HTTPMethods.content, forHTTPHeaderField: "Content-type")
-        
-        return request
+   
+    
+    func getSessionProducts(){
+        db.collection("products").whereField("name", isNotEqualTo: "").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                }
+            }
+    }
     }
 }

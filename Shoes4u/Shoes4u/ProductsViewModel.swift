@@ -10,16 +10,29 @@ import SwiftUI
 import Combine
 import Firebase
 import FirebaseCore
+import FirebaseFirestore
 
-final class ProductsViewModel: ObservableObject {
-    @Published var products : Product?
-    private let db = Firestore.firestore()
+ class ProductsViewModel: ObservableObject {
+    let db = Firestore.firestore()
+    @Published var products : [Product?]
     
-    var productosDevueltos = Set<AnyCancellable>()
+     init(){
+         
+     }
+    //var productosDevueltos = Set<AnyCancellable>()
     
     func getProducts(){
            
-        
+        db.collection("products").whereField("name", isNotEqualTo: "").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+            } else {
+                for document in querySnapshot!.documents {
+                    print("\(document.documentID) => \(document.data())")
+                    
+                }
+            }
+    }
     }
     
 }
