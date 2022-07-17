@@ -8,13 +8,17 @@
 import Foundation
 import SwiftUI
 import Combine
+import Firebase
+import FirebaseCore
 
 final class ProductsViewModel: ObservableObject {
     @Published var products : Product?
+    private let db = Firestore.firestore()
     
     var productosDevueltos = Set<AnyCancellable>()
     
     func getProducts(){
+           
         
     }
     

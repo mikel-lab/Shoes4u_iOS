@@ -11,7 +11,7 @@ struct ProductsView: View {
     //@StateObject private var viewmodel = ProductsViewModel()
     @State private var searchText = ""
     func botonazo(){
-        print("balsdld")
+        print("Navego hacia atrás")
     }
     
     private let gridItems: [GridItem] = [

@@ -16,6 +16,7 @@
 		24238ACC287229B30026C52A /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACB287229B30026C52A /* ProductsViewModel.swift */; };
 		24238AD02872D21F0026C52A /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238ACF2872D21F0026C52A /* TabBarView.swift */; };
 		24238C40287B3DD30026C52A /* BaseNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24238C3F287B3DD30026C52A /* BaseNetwork.swift */; };
+		2436F20D2884373800ACE4AC /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2436F20C2884373800ACE4AC /* PhotoViewModel.swift */; };
 		244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C967428548625006F2A51 /* Shoes4uApp.swift */; };
 		244C96792854862B006F2A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C96782854862B006F2A51 /* Assets.xcassets */; };
 		244C967C2854862B006F2A51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 244C967B2854862B006F2A51 /* Preview Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		24238ACB287229B30026C52A /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
 		24238ACF2872D21F0026C52A /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		24238C3F287B3DD30026C52A /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
+		2436F20C2884373800ACE4AC /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		244C967128548625006F2A51 /* Shoes4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoes4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C967428548625006F2A51 /* Shoes4uApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shoes4uApp.swift; sourceTree = "<group>"; };
 		244C96782854862B006F2A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 		0BD07B2A2869FC9D004F2877 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				24238C3E287B3DBA0026C52A /* Services */,
 				0BD07B302869FCF2004F2877 /* UseCases */,
 				0BD07B2F2869FCEE004F2877 /* Models */,
 			);
@@ -120,7 +123,6 @@
 		0BD07B2C2869FCB4004F2877 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				24238C3E287B3DBA0026C52A /* Services */,
 				0BD07B2D2869FCC0004F2877 /* Views */,
 				0BD07B2E2869FCCB004F2877 /* ViewModels */,
 			);
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				24238ACB287229B30026C52A /* ProductsViewModel.swift */,
+				2436F20C2884373800ACE4AC /* PhotoViewModel.swift */,
 			);
 			name = ViewModels;
 			path = ..;
@@ -416,6 +419,7 @@
 			files = (
 				24238ACA287229740026C52A /* ProductsView.swift in Sources */,
 				244C967528548625006F2A51 /* Shoes4uApp.swift in Sources */,
+				2436F20D2884373800ACE4AC /* PhotoViewModel.swift in Sources */,
 				24238ACC287229B30026C52A /* ProductsViewModel.swift in Sources */,
 				24238C40287B3DD30026C52A /* BaseNetwork.swift in Sources */,
 				24238AD02872D21F0026C52A /* TabBarView.swift in Sources */,

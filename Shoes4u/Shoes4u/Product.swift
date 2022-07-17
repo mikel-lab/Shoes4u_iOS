@@ -12,7 +12,8 @@ struct Product: Codable, Identifiable{
     
     let id: UUID
     let category:String?
-    let description: String? 
+    let description: String?
+    let imagenUrl: String?
     let name: String?
     let price: Int?
 }
