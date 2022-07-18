@@ -26,6 +26,7 @@
 		244C96902854862B006F2A51 /* Shoes4uUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C968F2854862B006F2A51 /* Shoes4uUITests.swift */; };
 		244C96922854862B006F2A51 /* Shoes4uUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C96912854862B006F2A51 /* Shoes4uUITestsLaunchTests.swift */; };
 		244C96A128548883006F2A51 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 244C96A028548883006F2A51 /* KeychainSwift */; };
+		24FA8D3B2886084700CECADF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 24FA8D3A2886084700CECADF /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 				244C96A128548883006F2A51 /* KeychainSwift in Frameworks */,
 				24271781288444C200504F95 /* FirebaseFirestore in Frameworks */,
 				0BA5D0112858E5BE009F7BCB /* FirebaseAuth in Frameworks */,
+				24FA8D3B2886084700CECADF /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +313,7 @@
 				0BA5D00B2858DD70009F7BCB /* FirebaseAnalyticsSwift */,
 				0BA5D0102858E5BE009F7BCB /* FirebaseAuth */,
 				24271780288444C200504F95 /* FirebaseFirestore */,
+				24FA8D3A2886084700CECADF /* FirebaseFirestoreSwift */,
 			);
 			productName = Shoes4u;
 			productReference = 244C967128548625006F2A51 /* Shoes4u.app */;
@@ -806,6 +809,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 244C969F28548883006F2A51 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
+		};
+		24FA8D3A2886084700CECADF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0BA5D0082858DD70009F7BCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

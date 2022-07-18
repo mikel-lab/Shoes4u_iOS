@@ -11,31 +11,47 @@ import Combine
 import Firebase
 import FirebaseCore
 import FirebaseFirestore
-
- class ProductsViewModel: ObservableObject {
-    let db = Firestore.firestore()
-    @Published var products : [Product?]
-    
+import FirebaseFirestoreSwift
+ final class ProductsViewModel: ObservableObject {
+     var db : Firestore = Firestore.firestore()
+     var productosDevueltos = Set<AnyCancellable>()
+     @Published var products : [Product]?
+     
      init(){
-         getProducts()
+         self.getProducts2()
      }
-    //var productosDevueltos = Set<AnyCancellable>()
-    
-    func getProducts(){
-           
-        db.collection("products").whereField("name", isNotEqualTo: "").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                    products.append(document)
-                    
-                }
-            }
-    }
-    }
-    
+
+     
+     func getProducts(){
+         
+         db.collection("products").whereField("name", isNotEqualTo: "").getDocuments() { (querySnapshot, err) in
+             if let err = err {
+                 print("Error getting documents: \(err)")
+             } else {
+                 for document in querySnapshot!.documents {
+                     print("\(document.documentID) => \(document.data())")
+                     //products.append(document)
+                     
+                 }
+             }
+         }
+     }
+     
+     func getProducts2(){
+         
+         db.collection("products").addSnapshotListener { (querySnapshot, Error) in
+             guard let documents = querySnapshot?.documents else {
+                 print("No documents")
+                 return
+             }
+             
+             self.products = documents.compactMap({ (QueryDocumentSnapshot) -> Product? in
+                 return try? QueryDocumentSnapshot.data(as: Product.self)
+             })
+         }
+     }
+     
+     
 }
 
 extension Color {

@@ -50,72 +50,22 @@ struct ProductsView: View {
                         .resizable()
                         .frame(width: 358, height: 370, alignment: .center )
                         .cornerRadius(10.0)
-                    
-                    
-                    
-                }
+                 }
                 .frame(maxWidth: .infinity, alignment: .center)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     
                     LazyVGrid(columns: gridItems, spacing: 10) {
                         
-                        if let zapatilla = viewModel.products {
+                        if let zapatilla = viewmodel.products {
                             ForEach(zapatilla){data in
-                                ProductView()
-
+                                ProductView(zapatilla: data)
+                                
                             }
                         }
-                        
-                       /* Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        Image("zapatilla_modelo")
-                            .resizable()
-                            .scaledToFill()
-                            .cornerRadius(10.0)
-                        */
-                        
                     }
-                    
                 }
-                
             }
-            
         }
         .padding(.horizontal)
         .background(Color.EqButtonAction)
