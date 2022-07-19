@@ -61,8 +61,47 @@ struct ProductsView: View {
                             ForEach(zapatilla){data in
                                 ProductView(zapatilla: data)
                                 
+                                
                             }
                         }
+                        Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 Image("zapatilla_modelo")
+                                                     .resizable()
+                                                     .scaledToFill()
+                                                     .cornerRadius(10.0)
+                                                 
                     }
                 }
             }

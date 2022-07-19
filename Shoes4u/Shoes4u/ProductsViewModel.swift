@@ -46,6 +46,7 @@ import FirebaseFirestoreSwift
              }
              
              self.products = documents.compactMap({ (QueryDocumentSnapshot) -> Product? in
+                 print("\(String(describing: self.products))")
                  return try? QueryDocumentSnapshot.data(as: Product.self)
              })
          }
