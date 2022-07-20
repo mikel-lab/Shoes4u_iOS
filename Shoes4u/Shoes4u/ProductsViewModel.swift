@@ -58,6 +58,6 @@ import FirebaseFirestoreSwift
 extension Color {
     // <------- Color del fondo de la app ----->
     public static var EqButtonAction: Color {
-       return Color(UIColor(red: 174/255, green: 207/255, blue: 209/255, alpha: 1.0))
+       return Color(UIColor(red: 87/255, green: 217/255, blue: 206/255, alpha: 1.0))
     }
 }
