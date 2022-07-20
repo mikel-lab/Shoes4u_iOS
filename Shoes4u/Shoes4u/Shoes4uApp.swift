@@ -20,9 +20,11 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct Shoes4uApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var rootViewModel = RootViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
+                .environmentObject(rootViewModel)
         }
     }
 }
