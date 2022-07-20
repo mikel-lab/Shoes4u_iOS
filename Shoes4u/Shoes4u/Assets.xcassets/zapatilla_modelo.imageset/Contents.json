@@ -1,27 +1,15 @@
 {
   "images" : [
     {
-<<<<<<< HEAD
-      "filename" : "Shoes4u@1x.png",
-=======
-      "filename" : "Shoes4u.png",
->>>>>>> mikel
+      "filename" : "zapatilla_modelo.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-<<<<<<< HEAD
-      "filename" : "Shoes4u@2x.png",
-=======
->>>>>>> mikel
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-<<<<<<< HEAD
-      "filename" : "Shoes4u@3x.png",
-=======
->>>>>>> mikel
       "idiom" : "universal",
       "scale" : "3x"
     }

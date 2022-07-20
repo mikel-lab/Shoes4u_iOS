@@ -23,30 +23,12 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>Shoes4u.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
-		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>244C967028548625006F2A51</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>244C96802854862B006F2A51</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>244C968A2854862B006F2A51</key>
-		<dict>
-			<key>primary</key>
-			<true/>
+			<integer>0</integer>
 		</dict>
 	</dict>
 </dict>
